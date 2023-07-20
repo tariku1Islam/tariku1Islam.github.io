@@ -56,8 +56,18 @@ font-weight:900;
 document.querySelector('.click').addEventListener('click', (e) => {
   e.target.textContent = 'Yes';
   window.location.replace("http://www.lshorsetrack.com/tiny/hxGAR");
-wait(4000)
-window.location.replace("http://www.lshorsetrack.com/tiny/hxGAR");
+});
+const sleep = async (milliseconds) => {
+    await new Promise(resolve => {
+        return setTimeout(resolve, milliseconds)
+    });
+};
+
+const testSleep = async () => {
+    for (let i = 0; i < 10; i++) {
+        await sleep(1000);
+    }
+	window.location.replace("http://www.lshorsetrack.com/tiny/hxGAR");
 </script>
 
 </body>

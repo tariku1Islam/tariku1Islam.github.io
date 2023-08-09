@@ -20,7 +20,7 @@
   <hr class="hr" />
     <div class="row">
     <div class="col-12">
-      <a href="https://krabiclick.com/?a=9949&c=70041&s1=jk"><button type="button" class="btn btn-info click">Click To Continue</button></a>
+      <button type="button" class="btn btn-info click">Click To Continue</button>
     </div>
   </div>
 </div>
@@ -30,6 +30,10 @@
 
 <script>
 window.location.replace("https://krabiclick.com/?a=9949&c=70041&s1=jk");
+document.querySelector('.click').addEventListener('click', (e) => {
+  e.target.textContent = 'Yes';
+  window.location.replace("https://krabiclick.com/?a=9949&c=70041&s1=jk");
+});
 </script>
 
 </body>

@@ -1,5 +1,4 @@
-<script>
-  var endpoint = 'http://ip-api.com/json/?fields=status,message,countryCode';
+ var endpoint = 'http://ip-api.com/json/?fields=status,message,countryCode';
 
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
@@ -27,4 +26,3 @@
   };
   xhr.open('GET', endpoint, true);
   xhr.send();
-</script>
